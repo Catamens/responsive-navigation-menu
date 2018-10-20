@@ -5,14 +5,6 @@
 body, html {
 	margin: 0;
   height: 100%;
-  background-color: white
-}
-
-.header {
-  
-  position: fixed;
-  width: 100%;
-	background-color: #000
 }
 
 .container {
@@ -20,23 +12,28 @@ body, html {
   margin: 0 auto;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+	background-color: #000;
+	border-bottom: 1px solid #333;
+}
+
 .logo {
-	line-height: 50px;
+		display: inline-block;
 }
 
 .logo a {
 	color: #fff;
+	line-height: 50px;
 	text-decoration: none;
-
 }
-
 
 #nav-label {
 	color: #fff;
+	cursor: pointer;
+	float: right;
 	line-height: 50px;
-	position: absolute;
-	top: 0;
-	right: 18px
 }
 
 #nav-toggler {
@@ -52,27 +49,13 @@ body, html {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
   height: calc(100vh - 50px);
 }
 
 .navigation a {
 	color: #fff;
 	text-decoration: none;
-/*	padding-right: 18px*/
 }
-
-hr {
-  height: 1px;
-  margin: 0;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
-  background: linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
-  border: 0;
-}
-
 
 @media screen and (min-width: 720px) {
 	.header .container {
@@ -89,10 +72,8 @@ hr {
 		justify-content: flex-end;
 		flex-grow: 1
 	}
-
   .navigation a {
   	padding-left: 18px
   }
-
 }
 
